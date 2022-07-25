@@ -19,7 +19,7 @@ export default function HomeScreen() {
     // }, []);
 
 
-    useEffect(() => getBData(), []);
+    useEffect(() => getCData(), []);
 
     const getCData = () => {
         setLoading(true)
@@ -55,7 +55,7 @@ export default function HomeScreen() {
             <View style={styles.footer}>
                 <TouchableOpacity
                     activeOpacity={0.9}
-                    onPress={getBData}
+                    onPress={getCData}
                     style={styles.loadMoreBtn}>
                     <Text style={styles.btnText}>Load More</Text>
                     {loading ? (

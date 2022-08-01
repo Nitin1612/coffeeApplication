@@ -3,10 +3,9 @@ import { StyleSheet, Text, View ,Image,StatusBar, TouchableOpacity ,Linking} fro
 import {GoogleSigninButton} from '@react-native-google-signin/google-signin';
 
 export default function LoginScreen(props) {
-  return (
-    
+  return (    
     <View style={styles.screen}>
-     <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor = "#987456" translucent = {true} />
+     <StatusBar barStyle = "dark-content" hidden = {false} backgroundColor="transparent" translucent = {true} />
         <Image 
         style={styles.image}
         source={{uri:'https://i.pinimg.com/564x/2b/0c/1b/2b0c1b3477d70ef98cbb3fc4ef6fd617.jpg'}}
